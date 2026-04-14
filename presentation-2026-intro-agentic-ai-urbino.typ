@@ -1,4 +1,4 @@
-#import "@preview/touying:0.6.3": *
+#import "@preview/touying:0.6.1": *
 #import "themes/theme.typ": *
 #import "@preview/ctheorems:1.1.3": *
 #import "@preview/numbly:0.1.0": numbly
@@ -66,7 +66,7 @@
 )
 
 #set text(font: ("Roboto", "DejaVu Sans", "Liberation Sans"), weight: 350, size: 20pt)
-#show math.equation: set text(font: ("New Computer Modern Math", "DejaVu Sans Mono"))
+#show math.equation: set text(font: ("Roboto", "New Computer Modern Math", "DejaVu Sans Mono"))
 #set strong(delta: 200)
 #set par(justify: true)
 #set highlight(fill: purple.lighten(80%))
@@ -871,7 +871,7 @@ _Deep dive:_ https://gianluca.aguzzi.dev/reading-group-2025-agentic-ai-and-mcp
   *#underline[Agents]*: Putting it All Together
 ]
 
-== LangChain Agents: Putting it Together
+== LangChain Agents
 
 - Unified API which allow to describe all the components of an agent in a single place: model, tools, memory, and system prompt.
 
