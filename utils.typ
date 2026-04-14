@@ -1,9 +1,4 @@
-#import "@preview/fontawesome:0.6.0": *
-
-/// #mail
-///
-/// - email (str): the email address of the author
-/// -> (block): a block containing the email address
+// utils.typ
 #let mail(email) = {
   text(size: 1.2em)[#raw(email)]
 }
@@ -38,6 +33,31 @@
 /// -> (block): a block containing the bolded content
 #let bold(content) = {
   text(weight: "bold")[#content]
+}
+
+#let beamer-block(title: none, body, color: rgb("#23373b")) = {
+  block(
+    width: 100%,
+    radius: 2pt,
+    clip: true,
+    stack(
+      dir: ttb,
+      if title != none {
+        block(
+          fill: color,
+          width: 100%,
+          inset: (x: 0.8em, y: 0.5em),
+          text(fill: white, weight: "bold", title)
+        )
+      },
+      block(
+        fill: color.lighten(90%),
+        width: 100%,
+        inset: (x: 0.8em, y: 0.8em),
+        body
+      )
+    )
+  )
 }
 
 #let styled-block(
@@ -81,7 +101,7 @@
   )
 }
 
-#let note-block(title, content, icon: fa-info-circle() + " ") = {
+#let note-block(title, content, icon: "") = {
   styled-block(
     title, 
     content, 
@@ -91,7 +111,7 @@
   )
 }
 
-#let warning-block(title, content, icon: fa-exclamation-triangle() + " ") = {
+#let warning-block(title, content, icon: "") = {
   styled-block(
     title, 
     content, 

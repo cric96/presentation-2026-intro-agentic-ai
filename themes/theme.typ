@@ -44,6 +44,7 @@
     show: components.cell.with(fill: self.colors.secondary, inset: 1em)
     set std.align(horizon)
     set text(fill: self.colors.neutral-lightest, weight: "medium", size: 1.2em)
+    show strong: set text(fill: self.colors.neutral-lightest)
     components.left-and-right(
       {
         if title != auto {
@@ -80,6 +81,7 @@
   let new-setting = body => {
     show: std.align.with(self.store.align)
     set text(fill: self.colors.neutral-darkest)
+    show strong: set text(fill: self.colors.primary)
     show: setting
     body
   }
@@ -207,6 +209,7 @@
     config-page(fill: self.colors.neutral-dark, margin: 2em),
   )
   set text(fill: self.colors.neutral-lightest, size: 1.5em)
+  show strong: set text(fill: self.colors.neutral-lightest)
   touying-slide(self: self, config: config, std.align(align, body))
 })
 
@@ -285,8 +288,8 @@
       alert: utils.alert-with-primary-color,
     ),
     config-colors(
-      primary: rgb("#827081"),
-      primary-light: rgb("#b7d1d6"),
+      primary: rgb("#eb811b"),
+      primary-light: rgb("#d6c6b7"),
       secondary:  rgb("#23373b"),
       neutral-lightest: rgb("#fafafa"),
       neutral-dark: rgb("#23373b"),
