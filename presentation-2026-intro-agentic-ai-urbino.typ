@@ -114,7 +114,7 @@
 - *Popular Frameworks* — A look at LangChain and its ecosystem.
 - *Implementation Examples* — _Practical_ patterns for building your first agent.
 
-Code repository: todo
+_Code repository_: https://github.com/cric96/code-2026-intro-agentic-ai-urbino
 
 == Who am I BTW?
 
