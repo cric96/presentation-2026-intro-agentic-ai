@@ -1,4 +1,4 @@
-#import "@preview/touying:0.6.3": *
+#import "@preview/touying:0.7.1": *
 #import "themes/theme.typ": *
 #import "@preview/ctheorems:1.1.3": *
 #import "@preview/numbly:0.1.0": numbly
