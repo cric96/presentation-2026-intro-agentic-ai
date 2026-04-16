@@ -1,6 +1,6 @@
 # Agentic AI: The Architectural Foundations of Modern AI Agents
 
-This repository contains the slides and materials for the seminar **"Agentic AI: The architectural foundations of modern AI agents"** held at the **University of Urbino** for the course *Foundations of Artificial Intelligence (Fondamenti di Intelligenza Artificiale)*.
+This repository contains the slides and materials for the seminar **"Agentic AI: The architectural foundations of modern AI agents"** held at the **University of Urbino** for the course *Deep Learning*.
 
 ## Overview
 
