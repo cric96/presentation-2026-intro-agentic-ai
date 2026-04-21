@@ -1,6 +1,6 @@
 // This theme is inspired by https://github.com/matze/mtheme
 // The origin code was written by https://github.com/Enivex
-#import "@preview/touying:0.7.1": *
+#import "@preview/touying:0.7.2": *
 
 /// Default slide function for the presentation.
 ///
